@@ -3,17 +3,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
 
 	Let's convert some temperatures!
-	<input type="text" id="starting-temp" name="starting-temp">
+	<input type="text" id="starting-temp" name="starting-temp"><br>
 
-	<input type="radio" name="convert">
-	<input type="radio" name="convert"> 
+	<input type="radio" name="convert" value="1" id="to-celsius">Fahrenheit to Celsius<br>
+	<input type="radio" name="convert" value="2" id="to-fahrenheit">Celsius to Fahrenheit<br>
 
-	<button>Convert</button>
+	<button id="converter" type="button" >Convert</button>
 	<button type="button" onclick="clearField()">Clear</button>
+	<div>
+	The converted tempurature is:
+	</div>
+	<div id="final-temp">
+		
+	</div>
 
 
 		<script type="text/javascript" src="temp.js"></script>
